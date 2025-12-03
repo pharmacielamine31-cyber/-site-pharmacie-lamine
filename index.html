@@ -1,0 +1,162 @@
+﻿
+<!DOCTYPE html>
+<html lang="fr"><link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2e7d32">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pharmacie Lamine – Catalogue & Panier de réservation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Pharmacie Lamine à Sidi Chami (Oran) — catalogue parapharmacie, réservation des produits, retrait en officine.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Logo Pharmacie Lamine" class="logo" />
+        <div class="brand-text">
+          <h1 data-i18n="brandTitle">Pharmacie Lamine</h1>
+          <p data-i18n="brandTag">Santé & Bien‑être</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#catalog" data-i18n="navProducts">Produits</a>
+        <a href="#cart" class="cart-icon"><span data-i18n="navCart">Panier</span> <span id="cart-count" class="cart-count">0</span></a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="lang-switch">
+        <button id="btn-fr" class="lang active">FR</button>
+        <button id="btn-ar" class="lang">AR</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h2 data-i18n="heroTitle">Votre santé, notre priorité</h2>
+        <p data-i18n="heroSubtitle">Catalogue de parapharmacie. Réservez vos produits et retirez en pharmacie.</p>
+        <a href="#catalog" class="btn" data-i18n="heroCta">Voir le catalogue</a>
+        <a href="#cart" class="btn btn-ghost" style="margin-left:8px" data-i18n="heroCart">Voir mon panier</a>
+      </div>
+      <div class="img" style="height:200px;border-radius:18px;background:linear-gradient(45deg,#a5d6a7,#f1f8f2);"></div>
+    </div>
+  </section>
+
+  <main class="section" id="catalog">
+    <div class="container">
+      <h3 data-i18n="productsTitle">Produits</h3>
+      <div class="toolbar">
+        <div class="filters">
+          <input id="q" class="input" type="search" placeholder="Rechercher…" />
+          <select id="cat"></select>
+          <select id="brand"></select>
+        </div>
+        <div class="muted"><span data-i18n="catalogHint">Astuce : cliquez sur “Ajouter au panier” pour réserver.</span></div>
+      </div>
+      <div id="grid" class="grid"></div>
+    </div>
+  </main>
+
+  <section class="section alt" id="cart">
+    <div class="container">
+      <h3 data-i18n="cartTitle">Panier de réservation</h3>
+      <div class="muted" id="cart-empty" style="display:none" data-i18n="cartEmpty">Votre panier est vide.</div>
+      <div id="cart-area" style="display:none">
+        <div style="overflow:auto">
+          <table>
+            <thead>
+              <tr>
+                <th data-i18n="thProduct">Produit</th>
+                <th data-i18n="thPrice">Prix</th>
+                <th data-i18n="thQty">Qté</th>
+                <th data-i18n="thSubtotal">Sous-total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="cart-items"></tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3" style="text-align:right" data-i18n="totalLabel">Total estimatif</td>
+                <td id="cart-total">0</td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="toolbar" style="margin-top:10px">
+          <button id="clear-cart" class="btn btn-ghost">Vider le panier</button>
+        </div>
+        <h4 style="margin-top:22px" data-i18n="reserveTitle">Valider la réservation</h4>
+        <form id="reserve-form">
+          <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+            <div>
+              <label data-i18n="formNameLabel">Nom complet</label>
+              <input required class="input" name="name" />
+            </div>
+            <div>
+              <label data-i18n="formPhoneLabel">Téléphone</label>
+              <input required class="input" name="phone" />
+            </div>
+            <div>
+              <label data-i18n="formEmailLabel">E‑mail</label>
+              <input required type="email" class="input" name="email" />
+            </div>
+          </div>
+          <label data-i18n="formMsgLabel">Message / Remarques</label>
+          <textarea class="input" name="note" placeholder="Ex. Je passe demain après 17h"></textarea>
+          <button class="btn" type="submit" data-i18n="reserveBtn">Envoyer la demande de réservation</button>
+          <p class="muted" data-i18n="reserveNote">Aucun paiement en ligne. Nous vous recontactons pour confirmer la disponibilité.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <h3 data-i18n="contactTitle">Contact</h3>
+      <p class="muted" data-i18n="contactSubtitle">Écrivez‑nous — nous vous répondons rapidement.</p>
+      <div class="grid" style="grid-template-columns:1fr 1fr">
+        <div>
+          <form action="mailto:pharmacie.lamine31@gmail.com" method="post" enctype="text/plain">
+            <label data-i18n="formNameLabel">Nom complet</label>
+            <input class="input" type="text" name="Nom" required />
+            <label data-i18n="formEmailLabel">Adresse e‑mail</label>
+            <input class="input" type="email" name="Email" required />
+            <label data-i18n="formMsgLabel">Message</label>
+            <textarea class="input" name="Message" rows="5" required></textarea>
+            <button class="btn" type="submit" data-i18n="formSubmit">Envoyer</button>
+          </form>
+        </div>
+        <div>
+          <p class="muted">N°256, première tranche, Haï En‑Nejma, commune de Sidi Chami, Oran</p>
+          <div style="border:1px solid #eaeaea;border-radius:12px;overflow:hidden">
+            <iframe src="https://www.google.com/maps?q=N%C2%B0256,+Ha%C3%AF+En-Nejma,+Sidi+Chami,+Oran&output=embed" width="100%" height="300" style="border:0" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> <span data-i18n="brandTitle">Pharmacie Lamine</span>. <span data-i18n="rights">Tous droits réservés.</span></p>
+      <div class="footer-contact">
+        <a href="mailto:pharmacie.lamine31@gmail.com">pharmacie.lamine31@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js")
+      .catch(err => console.log("SW error", err));
+  }
+</script>
+</body>
+</html>

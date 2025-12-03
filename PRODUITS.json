@@ -1,0 +1,223 @@
+﻿[
+  {
+    "id": "P001",
+    "name": "Crème hydratante 50ml",
+    "cat": "Dermocosmétique",
+    "brand": "Avène",
+    "price": 2490,
+    "image": "avene-creme.jpg"
+  },
+  {
+    "id": "P002",
+    "name": "Gel nettoyant visage",
+    "cat": "Hygiène & Soins",
+    "brand": "La Roche-Posay",
+    "price": 2190,
+    "image": "lrp-gel.jpg"
+  },
+  {
+    "id": "P003",
+    "name": "Vitamine C 1000mg",
+    "cat": "Compléments alimentaires",
+    "brand": "Solgar",
+    "price": 3590,
+    "image": "solgar-vitc.jpg"
+  },
+  {
+    "id": "P004",
+    "name": "Lunathal",
+    "cat": "Dermocosmétique",
+    "brand": "Sans marque",
+    "price": 250,
+    "image": "placeholder.png"
+  },
+  {
+    "id": "P005",
+    "name": "Nivea Soft 50 ml",
+    "cat": "Dermocosmétique",
+    "brand": "Nivea",
+    "price": 900,
+    "image": "placeholder.png"
+  },
+  {
+    "id": "P006",
+    "name": "Polydermyl",
+    "cat": "Dermocosmétique",
+    "brand": "Sans marque",
+    "price": 650,
+    "image": "placeholder.png"
+  },
+  {
+    "id": "P007",
+    "name": "Collagène marin",
+    "cat": "Compléments alimentaires",
+    "brand": "Nutraxyn",
+    "price": 2900,
+    "image": "collagene-nutraxyn.jpg"
+  },
+
+  {
+    "id": "P008",
+    "name": "Crème solaire SPF50+ visage",
+    "cat": "Dermocosmétique",
+    "brand": "La Roche-Posay",
+    "price": 3800,
+    "image": "placeholder.png"
+  },
+  {
+    "id": "P009",
+    "name": "Crème mains réparatrice",
+    "cat": "Dermocosmétique",
+    "brand": "Uriage",
+    "price": 1450,
+    "image": "placeholder.png"
+  },
+  {
+    "id": "P010",
+    "name": "Sérum hydratant à l’acide hyaluronique",
+    "cat": "Visage & Beauté",
+    "brand": "Vichy",
+    "price": 5200,
+    "image": "placeholder.png"
+  },
+  {
+    "id": "P011",
+    "name": "Gel douche surgras 500 ml",
+    "cat": "Hygiène & Soins",
+    "brand": "Topicrem",
+    "price": 2100,
+    "image": "placeholder.png"
+  },
+  {
+    "id": "P012",
+    "name": "Shampoing antipelliculaire",
+    "cat": "Capillaire",
+    "brand": "Ducray",
+    "price": 2600,
+    "image": "placeholder.png"
+  },
+  {
+    "id": "P013",
+    "name": "Solution micellaire démaquillante 400 ml",
+    "cat": "Visage & Beauté",
+    "brand": "Bioderma",
+    "price": 2300,
+    "image": "placeholder.png"
+  },
+  {
+    "id": "P014",
+    "name": "Déodorant roll-on 48h",
+    "cat": "Hygiène & Soins",
+    "brand": "Nivea",
+    "price": 1100,
+    "image": "placeholder.png"
+  },
+  {
+    "id": "P015",
+    "name": "Gel intime doux",
+    "cat": "Hygiène & Soins",
+    "brand": "Saforelle",
+    "price": 2400,
+    "image": "placeholder.png"
+  },
+
+  {
+    "id": "P016",
+    "name": "Oméga 3 haute concentration",
+    "cat": "Compléments alimentaires",
+    "brand": "Solgar",
+    "price": 4100,
+    "image": "placeholder.png"
+  },
+  {
+    "id": "P017",
+    "name": "Magnésium + Vitamine B6",
+    "cat": "Compléments alimentaires",
+    "brand": "Biogaran",
+    "price": 1900,
+    "image": "placeholder.png"
+  },
+  {
+    "id": "P018",
+    "name": "Multivitamines adulte",
+    "cat": "Compléments alimentaires",
+    "brand": "Centrum",
+    "price": 3200,
+    "image": "placeholder.png"
+  },
+  {
+    "id": "P019",
+    "name": "Probiotiques flore intestinale",
+    "cat": "Compléments alimentaires",
+    "brand": "Pileje",
+    "price": 3600,
+    "image": "placeholder.png"
+  },
+
+  {
+    "id": "P020",
+    "name": "Lait de toilette bébé",
+    "cat": "Maman & Bébé",
+    "brand": "Mustela",
+    "price": 2400,
+    "image": "placeholder.png"
+  },
+  {
+    "id": "P021",
+    "name": "Crème change bébé",
+    "cat": "Maman & Bébé",
+    "brand": "Mustela",
+    "price": 1800,
+    "image": "placeholder.png"
+  },
+  {
+    "id": "P022",
+    "name": "Gel lavant doux bébé",
+    "cat": "Maman & Bébé",
+    "brand": "Uriage",
+    "price": 2300,
+    "image": "placeholder.png"
+  },
+
+  {
+    "id": "P023",
+    "name": "Substitut de repas minceur (barres x6)",
+    "cat": "Nutrition",
+    "brand": "Gerlinéa",
+    "price": 2900,
+    "image": "placeholder.png"
+  },
+  {
+    "id": "P024",
+    "name": "Boisson hyperprotéinée vanille",
+    "cat": "Nutrition",
+    "brand": "Fresenius",
+    "price": 3100,
+    "image": "placeholder.png"
+  },
+
+  {
+    "id": "P025",
+    "name": "Tensiomètre électronique bras",
+    "cat": "Appareils & Accessoires",
+    "brand": "Omron",
+    "price": 9500,
+    "image": "placeholder.png"
+  },
+  {
+    "id": "P026",
+    "name": "Thermomètre frontal infrarouge",
+    "cat": "Appareils & Accessoires",
+    "brand": "Sans marque",
+    "price": 6200,
+    "image": "placeholder.png"
+  },
+  {
+    "id": "P027",
+    "name": "Aérosol pneumatique adulte/enfant",
+    "cat": "Appareils & Accessoires",
+    "brand": "Sans marque",
+    "price": 11500,
+    "image": "placeholder.png"
+  }
+]
